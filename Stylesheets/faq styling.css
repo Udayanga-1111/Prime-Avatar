@@ -1,0 +1,190 @@
+*{
+    list-style: none;
+    padding: 0;
+}
+
+:root{
+    --color1: rgb(19,21,21);
+    --text-color: rgb(255, 250, 251);
+    --subback-color: rgb(21, 127, 146);
+    --accent-color: rgb(82, 220, 238);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding:20px ;
+}
+
+#title-1{
+    color: rgb(26, 26, 26);
+    text-shadow: 0px 4px var(--accent-color), 0px -2px 10px var(--accent-color) ;
+    animation-name: font-gradient;
+    animation-duration: .5s;
+    animation-iteration-count: 2;
+    text-align: center;
+}
+
+@keyframes font-gradient {
+    
+    0%{
+        text-shadow: none ;
+    }
+    15%{
+        text-shadow: none ;
+    }
+    20%{
+        text-shadow: 0px 4px var(--accent-color), 0px -2px 10px var(--accent-color) ;
+    }
+    25%{
+        text-shadow: none ;
+    }
+
+    60%{
+        text-shadow: 0px 4px var(--accent-color), 0px -2px 10px var(--accent-color)
+    }
+
+    70%{
+        text-shadow: 0px 4px var(--accent-color), 0px -2px 10px var(--accent-color) ;
+    }
+
+    90%{
+        text-shadow: none ;
+    }
+
+    100%{
+        text-shadow: 0px 4px var(--accent-color), 0px -2px 10px var(--accent-color) ;
+    }
+
+
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+
+    width: 60%;
+}
+
+#content-1{
+    margin-top: 10px;
+    border: 2px solid;
+    box-shadow: 5px 5px var(--subback-color);
+    padding: 1em;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+}
+
+.sub-titles{
+    color: rgb(26, 26, 26);
+    text-shadow: 0px 4px var(--accent-color), 0px -2px 10px var(--accent-color) ;
+}
+
+#answer{
+    border: 2px solid var(--accent-color);
+    border-radius: 15px;
+    padding: 1em;
+
+    box-shadow: 2px 4px var(--subback-color);
+}
+
+#faq{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#faq li{
+    list-style: disc;
+}
+
+
+#faq li p{
+    padding: 0 5px;
+    font-size: 14px;
+    text-align: justify;
+    
+}
+
+#queries{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form .inputs{
+    outline: none;
+    background-color: rgb(206, 206, 206);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    color: rgb(104, 104, 104);
+    padding: 2px;
+    width: 30vw;
+}
+
+#queries button{
+    align-self: flex-end;
+}
+
+#queries button{
+    background-color: transparent;
+    border: 2px solid var(--subback-color);
+    border-radius: 10px;
+    padding: 0 5px;
+    color: var(--text-color);
+}
+
+hr{
+    color: aliceblue;
+    width: 100%;
+}
+
+
+
+/*-----------------------Animatons----------------*/
+
+form .inputs:hover{
+    background-color: rgb(236, 236, 236);
+    cursor: pointer;
+}
+
+form .inputs:focus{
+    background-color: transparent;
+    cursor: text;
+    color: white;
+    border-color: var(--accent-color);
+    padding: 2px;
+}
+
+#queries button:hover{
+    background-color: var(--subback-color);
+}
+
+
+/*-------------media queries-------------*/
+
+@media (max-width:880px) {
+    
+    main{
+        padding: 20px 5%;
+        font-size: 16px;
+    }
+
+    main #content{
+        width: 100%;
+    }
+
+    #queries .inputs{
+        width: 60vw;
+    }
+}

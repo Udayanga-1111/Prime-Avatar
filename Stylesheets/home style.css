@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Audiowide&family=Black+Ops+One&family=Bree+Serif&family=Odibee+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yatra+One&family=Zen+Dots&display=swap');
+
+
+:root{
+    --color1: rgb(19, 21, 21);
+    --text-color: rgb(255, 250, 251);
+    --subback-color: rgb(21, 127, 146);
+    --accent-color: rgb(82, 220, 238);
+}
+
+
+main{
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+#main-section-1{
+    background-image: url(./Images/Home-Page-Images/Home-background-image.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/*--------------------------Intro part-------------------------*/
+
+#intro-header{
+    font-size: 6vw;
+
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    text-shadow: 5px 5px var(--subback-color), -5px -5px 10px var(--color1);
+}
+
+#intro-header small{
+    font-size: 4vw;
+    font-weight: 300;
+}
+
+#quote{
+    font-size: 2vw;
+    font-weight: 300;
+}
+
+#main-section-1 #intro{
+    background-image: linear-gradient(160deg, var(--color1), rgba(19,21,21,.5), transparent, transparent );
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    width: 100%;
+    height: fit-content;
+    padding: 0 1vw;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-section-1 #intro #intro-items{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-section-1 #intro p{
+    font-style: italic;
+    font-size: 1vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    padding: 10px 20px;
+    width: 45vw;
+    border-radius: 20px;
+}
+
+#main-section-1 #intro img{
+    width: 45vw;
+    height: 30vw;
+}
+
+/*---------------------subnav----------------------*/
+
+#sub-navigation{
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    background-image: linear-gradient(0deg, var(--color1), var(--color1), transparent);
+}
+
+#main-section-1 .sub-nav{
+    width: 15vw;
+    height: 20vw;
+    border: 3px solid var(--subback-color);
+    border-radius: 20px;
+}
+
+#sub-nav2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    width: 20vw;
+    height: 20vw;
+}
+
+.sub-2{
+    width: 100%;
+    height: 9.5vw;
+    border: 3px solid var(--subback-color);
+    border-radius: 20px;
+}
+
+/*======================main-section-2==========================*/
+
+#main-section-2{
+    padding: 7vw;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+}
+
+#main-section-2 a{
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+#info-1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2vw;
+
+    border-bottom: 2px solid;
+    padding-top: 100px;
+}
+
+#intro-1-title{
+    font-size: 3vw;
+    text-align: center;
+
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    text-shadow: 5px 5px var(--subback-color), -5px -5px 10px var(--color1);
+}
+
+#intro-1-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#intro-1-content #img-2{
+    display: none;
+}
+
+#info-1 #img-1{
+    width: 25vw;
+}
+
+.p-tags{
+    width: 40vw;
+    text-align: justify;
+}
+
+#info-2-content ul{
+    font-size:1vw;
+}
+
+/*==================sub-navigation=================*/
+
+#sub1, #sub2, #sub3{
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+#sub1{
+    background-image: url(./Images/Home-Page-Images/subsec_image-4.webp);
+}
+
+#sub2{
+    background-image: url(./Images/Home-Page-Images/subsec\ image3.webp);
+}
+
+#sub-sec1, #sub-sec2, #sub-sec3{
+    background-image: linear-gradient(0deg, var(--color1),rgba(19,21,21,.5),transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sub-sec1 p, #sub-sec2 p, #sub-sec3 p{
+    display: none;
+}
+
+#sub-sec5{
+    background-image: url(./Images/Home-Page-Images/subnaw\ image-2.webp);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+#sub-sec4{
+    background-image: url(./Images/Home-Page-Images/subnav\ image\ -1.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+
+}
+
+#sub-sec4 h1, #sub-sec5 h1{
+    background-image: linear-gradient(0deg, var(--color1),rgba(19,21,21,.5),transparent);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sub-navigation h1{
+    font-size: 2vw;
+}
+
+#sub-navigation p{
+    font-size: 1vw;
+}
+
+
+/*==================info-2====================*/
+
+#info-2{
+    display: flex;
+    align-items: center;
+
+    border-bottom: 2px solid;
+    padding-top: 100px;
+}
+
+#info-2 img {
+    width: 45vw;
+}
+
+#info2-title{
+    font-size: 3vw;
+    text-align: center;
+
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    text-shadow: 5px 5px var(--subback-color), -5px -5px 10px var(--color1);
+}
+
+#info-2-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly ;
+    gap: 20px;
+}
+
+#accessoriesimg{
+    display: none;
+}
+
+
+/*===============================Main extra section========================*/
+
+#main-section-extra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+#extra-section-title{
+    font-size: 3vw;
+    text-align: center;
+
+    font-family: "Audiowide", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    text-shadow: 5px 5px var(--subback-color), -5px -5px 10px var(--color1);
+}
+
+
+#popular-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+#Game-1{
+    background-image: url(./Images/Home-Page-Images/GTA\ V.webp);
+}
+
+#Game-2{
+    background-image: url(./Images/Home-Page-Images/COD\ MW\ III.webp);
+}
+
+#Game-3{
+    background-image: url(./Images/Home-Page-Images/Valorant.webp);
+}
+
+#Game-4{
+    background-image: url(./Images/Home-Page-Images/Fortnite.webp);
+}
+
+#Game-5{
+    background-image: url(./Images/Home-Page-Images/COD\ Warzone.webp);
+}
+
+.Game{
+    margin: 10px;
+    width:15vw;
+    min-width: 250px;
+    height: 6vw;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-size: cover;
+    background-position: top;
+    overflow-y: hidden;
+    border-radius: 20px;
+
+    box-shadow: 3px 3px var(--subback-color) , -3px -3px 10px var(--accent-color);
+}
+
+.game{
+    transform: translateY(200px);
+    display: none;
+}
+
+.number{
+    background: linear-gradient(180deg, rgba(19,21,21,.5),rgba(19, 21, 21, 0.61), transparent);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2vw;
+    text-shadow: 5px 5px 8px var(--color1) , -5px -5px 8px var(--color1);
+}
+
+/****************media queries----------*/
+@media (max-width:880px) {
+
+    #main-section-1 #intro{
+        padding: 0;
+    }
+
+    #intro-header{
+        font-size: 8vw;
+        text-align: center;
+    }
+
+    #intro-header small{
+        font-size: 6vw;
+    }
+
+    #quote{
+        font-size: 4vw;
+    }
+    #main-section-1 #intro #intro-items{
+        align-items: center;
+    }
+
+    #main-section-1 #intro{
+        display: flex;
+        justify-content: center;
+    }
+
+    #main-section-1 #intro p{
+        font-size: 2.5vw;
+        text-wrap: wrap;
+        width: 80vw;
+        text-align: justify;
+    }
+
+    #main-section-1 #intro img{
+        display: none;
+    }
+
+    #main-section-1 .sub-nav{
+        width: 40vw;
+        height: 20vw;
+        min-width: 300px;
+    }
+
+    #main-section-1 #sub-nav2{
+        width: 40vw;
+        height: 20vw;
+        min-width: 300px;
+    }
+
+    .sub-2{
+        width: 100%;
+        height: 9.5vw;
+        border: 3px solid var(--subback-color);
+        border-radius: 20px;
+    }
+
+    #sub-nav2 .sub-2 h1{
+        font-size: 4vw;
+    }
+
+
+    #sub-navigation .sub-nav h1{
+        font-size:4vw;
+    }
+
+    #sub-navigation .sub-nav p{
+        font-size: 2vw;
+    }
+
+    #main-section-2{
+        padding: 0;
+    }
+
+    #info-1{
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    #info-1 #img-1{
+        display: none;
+    }
+
+    #intro-1-title, #info2-title, #extra-section-title{
+        font-size: 6vw;
+        text-align: center;
+    }
+
+    #intro-1-content #img-2{
+        display: block;
+        width: 30vw;
+    }
+
+    .p-tags{
+        width: 70vw;
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    #imginfo2{
+        display: none;
+    }
+
+    #accessoriesimg{
+        display: block;
+    }
+
+    #info-2{
+        padding: 30px 0;
+    }
+    
+
+    #info-2-content, #info-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #info-2-content ul{
+        font-size: 2.5vw;
+    }
+
+    .number{
+        height: auto;
+        display: none;
+    }
+
+    .game{
+        height: 100%;
+        width: 100%;
+        transform: translateY(0);
+        display: block;
+        background-color: rgba(0, 0, 0, 0.747);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/*====================Animation+=======================*/
+
+/*==========subnav animation===============*/
+#sub-navigation a:hover{
+    scale: 1.05;
+    transition: all .2s ease;
+}
+
+#sub-sec1:hover, #sub-sec2:hover, #sub-sec3:hover{
+    background-image: linear-gradient(0deg, var(--color1),var(--color1),transparent);
+}
+
+#sub-sec1:hover p, #sub-sec2:hover p, #sub-sec3:hover p{
+    display: block;
+}
+
+.Game:hover .game{
+    display: block;
+    transform: translateY(0);
+    
+    background:rgba(0, 0, 0, 0.651);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Game:hover .number{
+    display: none;
+}
+
+.Game:hover{
+    scale: 1.03;
+}
