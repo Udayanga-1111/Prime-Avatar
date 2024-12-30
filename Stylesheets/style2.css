@@ -13,6 +13,7 @@
 }
 
 body{
+    max-width: 100vw;
     background-color: var(--color1);
     display: grid;
     grid-template-columns:100vw;
@@ -416,19 +417,19 @@ svg{
     display: none;
 }
 
-#sidebar-active:checked ~ .links-container{
-    right: 0;
-    transition: .75s ease-out;
-}
 
 /*--------------------- media queries ---------------------------*/
 
 @media (max-width:880px){
 
-    header #loginsec .links-container{
-        display:flex;
+    #sidebar-active:checked ~ .links-container{
+        right: 0;
+        transition:all .75s ease-out;
+        display: flex;
+        transition: .5 ease-in;
 
     }
+
 
     body{
         grid-template-rows: auto 40px 1fr auto;

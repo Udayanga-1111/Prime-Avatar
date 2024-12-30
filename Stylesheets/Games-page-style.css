@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Audiowide&family=Black+Ops+One&family=Bree+Serif&family=Odibee+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yatra+One&family=Zen+Dots&display=swap');
+
+:root{
+    --color1: rgb(19, 21, 21);
+    --text-color: rgb(255, 250, 251);
+    --subback-color: rgb(21, 127, 146);
+    --accent-color: rgb(82, 220, 238);
+}
+
+main{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.game{                                                                          /*===game list======*/
+    width: 50vw;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    border-radius: 20px;
+    background-color: rgb(46, 46, 46);
+}
+
+.game-pic{                                                                      /*==========game list icons=======*/
+    width: 9vw;
+    height: 10vw;
+    border-radius: 20px 0 0 20px;
+}
+
+
+
+
+/*===================================mmedia queries======================*/
+@media (max-width:880px) {
+    
+    main{
+        padding:3vw;
+        display: flex;
+        justify-content: start;
+    }
+
+    .game{
+        width: 100vw;
+        border-radius: 5px;
+        height: 20vw;
+    }
+
+    .game-pic{
+        height: 20vw;
+        border-radius: 5px 0 0 5px;
+        width: 17vw;
+    }
+
+}
