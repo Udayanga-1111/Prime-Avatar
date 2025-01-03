@@ -336,7 +336,7 @@ main{
     width:15vw;
     min-width: 250px;
     height: 6vw;
-    min-height: 50px;
+    min-height: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -408,9 +408,12 @@ main{
     }
 
     #main-section-1 .sub-nav{
-        width: 40vw;
-        height: 20vw;
-        min-width: 300px;
+        width: 20vw;
+        height: 30vw;
+    }
+
+    #sub2 .sub-nav h1{
+        text-align: center;
     }
 
     #main-section-1 #sub-nav2{
@@ -505,6 +508,7 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 3vw;
     }
 }
 
