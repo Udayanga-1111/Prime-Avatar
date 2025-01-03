@@ -13,7 +13,7 @@
     "type": "image/gif",
     "form_factor": "wide",
     "label": "Application",
-  }],
+  },
   "icons": [
     {
       "src": "./web-app-manifest-192x192.png",
